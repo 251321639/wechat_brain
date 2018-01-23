@@ -1,6 +1,7 @@
 # Python头脑王者答题器
 
 ## 效果
+<img width="30%" src="./images/result.png">
 [视频](http://v.youku.com/v_show/id_XMzM0Mzk0MDQ0MA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 原理说明
@@ -45,11 +46,9 @@ class FileEventHandler(FileSystemEventHandler):
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 - 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
 
-- 0x03	开始排位即可
+- 0x03	开始排位即可,开始上分之旅吧！
 
-## 结果
 
-<img width="30%" src="./images/result.png">
 
 
 
