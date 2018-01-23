@@ -49,7 +49,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 ## 结果
 
-<img width="50%" src="./images/result.png">
+<img width="30%" src="./images/result.png">
 
 
 
