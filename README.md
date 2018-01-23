@@ -42,8 +42,9 @@ class FileEventHandler(FileSystemEventHandler):
 <img width="80%" src="./images/setting1.png">
 	Proxy->SSL Proxying Settings
 <img width="80%" src="./images/setting2.png">
-	Tools->Mirror
+	Tools->Mirror(SAVE TO路径要改成answer目录所在的位置)
 <img width="80%" src="./images/setting3.png">
+
 
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 
