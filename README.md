@@ -6,7 +6,7 @@
 ## 原理说明
 
 1. 通过 Charles抓包，获取 https://question.hortor.net/question/bat/ 返回的json数据，并保存成文件
-![](./images/findQuiz.gif)
+![](./images/findQuiz.png)
 
 2. 通过watchdog监测question.hortor.net/question/bat/目下文件的变化，去响应对应的方法
 ```
@@ -37,11 +37,11 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x01	Charles配置
 	Proxy->Recording Settings
-![](./images/setting1.gif)
+![](./images/setting1.png)
 	Proxy->SSL Proxying Settings
-![](./images/setting2.gif)
+![](./images/setting2.png)
 	Tools->Mirror
-![](./images/setting3.gif)
+![](./images/setting3.png)
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 - 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
 
@@ -49,7 +49,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 ## 结果
 
-![](./image/result.gif)
+![](./images/result.png)
 自动版还未在其他手机上测试过，小米6是可以运行的。
 
 
