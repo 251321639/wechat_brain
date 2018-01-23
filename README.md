@@ -6,7 +6,7 @@
 ## 原理说明
 
 1. 通过 Charles抓包，获取 https://question.hortor.net/question/bat/ 返回的json数据，并保存成文件
-![](./images/findQuiz.png)
+<img width="50%" src="./images/findQuiz.png">
 
 2. 通过watchdog监测question.hortor.net/question/bat/目下文件的变化，去响应对应的方法
 ```
