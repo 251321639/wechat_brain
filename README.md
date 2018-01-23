@@ -6,7 +6,7 @@
 ## 原理说明
 
 1. 通过 Charles抓包，获取 https://question.hortor.net/question/bat/ 返回的json数据，并保存成文件
-![](./findQuiz.gif)
+![](./images/findQuiz.gif)
 
 2. 通过watchdog监测question.hortor.net/question/bat/目下文件的变化，去响应对应的方法
 ```
@@ -37,11 +37,11 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x01	Charles配置
 	Proxy->Recording Settings
-![](./image/setting1.gif)
+![](./images/setting1.gif)
 	Proxy->SSL Proxying Settings
-![](./image/setting2.gif)
+![](./images/setting2.gif)
 	Tools->Mirror
-![](./image/setting3.gif)
+![](./images/setting3.gif)
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 - 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
 
