@@ -37,9 +37,9 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x01	Charles配置
 	Proxy->Recording Settings
-![](./images/setting1.png = 500)
+![](./images/setting1.png = 500*500)
 	Proxy->SSL Proxying Settings
-![](./images/setting2.png = 500)
+![](./images/setting2.png){:height="50%" width="50%"}
 	Tools->Mirror
 ![](./images/setting3.png)
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
