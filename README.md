@@ -31,7 +31,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 3.获取题目后，如果题目在数据库中，直接返回答案。否则通过百度搜索题目信息，并统计选项出现的次数，出现的最多的选项就当作答案。
 
-4.通过adb shell input tab 模拟点击选项
+4.通过adb shell input tab 模拟点击选项(自动版的只在小米6上试过)
 
 ## 使用教程
 
@@ -50,6 +50,6 @@ class FileEventHandler(FileSystemEventHandler):
 ## 结果
 
 ![](<img width="300" src="./images/result.png">)
-自动版还未在其他手机上测试过，小米6是可以运行的。
+
 
 
