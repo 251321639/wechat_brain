@@ -7,6 +7,8 @@ import sql
 import time
 import os
 import adbshell
+import bs4
+import watchdog
 
 from bs4 import BeautifulSoup
 from watchdog.observers import Observer
@@ -21,12 +23,11 @@ def read_question(f):
 	options = response['data']['options']
 	sql_result=sql.sql_match_result('"%s"' % question)
 	if sql_result:
-		print('绝对正确答案: %s ' % sql_result)
-		for i in range(0,3):
-			if options[i].strip() == sql_result.strip():
-				while not os.path.exists('question.hortor.net/question/bat/choose'):
-					time.sleep(0.5)
-					adbshell.tap('option' + str(i))
+		print('Question: '+question)
+		print('绝对正确答案:%s' % sql_result)
+		while not os.path.exists('question.hortor.net/question/bat/choose'):
+			time.sleep(0.5)
+			adbshell.tap('option' + str(options.index(sql_result)))
 	else:
 		count_base(question, options)
 	return response
@@ -74,7 +75,7 @@ class FileEventHandler(FileSystemEventHandler):
 		elif event.src_path.split('/')[-1] == 'choose':
 			sql.sql_write(quiz)
 		elif event.src_path.split('/')[-1] == 'fightResult':
-			print('fightresult')
+			print('本局结束')
 			time.sleep(3)
 			adbshell.back()
 			time.sleep(3)
@@ -84,6 +85,7 @@ if __name__ == "__main__":
 	observer = Observer()
 	event_handler = FileEventHandler()
 	observer.schedule(event_handler,'question.hortor.net/question/bat/',True)
+	print('-----答题器已运行，请开始排位-----')
 	observer.start()
 	try:
 		while True:
