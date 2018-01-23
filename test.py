@@ -10,10 +10,10 @@ print('Opened database successfully')
 
 '''
 try:
-	conn.execute('''CREATE TABLE MISTAKE
+	conn.execute(CREATE TABLE MISTAKE
 			(ID INTEGER PRIMARY KEY,
 			QUESTION TEXT UNIQUE,
-			ANSWER TEXT NOT NULL);''')
+			ANSWER TEXT NOT NULL);)
 	print('Table created successfully')
 except:
 	print('Table mistake already exists please ignore')
@@ -35,6 +35,7 @@ with open('question.hortor.net/question/bat/findQuiz', encoding='utf-8') as find
 	except:
 		print('This question already exists please ignore')
 '''
+
 
 
 cursor = conn.execute("select id,question,answer from mistake")

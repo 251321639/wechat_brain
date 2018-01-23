@@ -26,13 +26,12 @@ def sql_write(quiz):
 		question = quiz['data']['quiz']
 		right_choose = int(response['data']['answer']) -1 
 		answer = quiz['data']['options'][right_choose]
-		if response['data']['yes'] == False:
-			print('将上一道答错的题写入数据库中...')
-			try:
-				sql = "insert into mistake(question,answer)values('%s','%s')" % (question,answer)
-				print(sql)
-				conn.execute(sql)
-				conn.commit()
-				print('写入成功')
-			except:
-				print('该问题已存在数据库中，跳过')
+		print('将题目写入数据库中...')
+		try:
+			sql = "insert into mistake(question,answer)values('%s','%s')" % (question,answer)
+			print(sql)
+			conn.execute(sql)
+			conn.commit()
+			print('写入成功')
+		except:
+			print('该问题已存在数据库中，跳过')

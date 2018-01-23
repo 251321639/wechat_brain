@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
 		#sql.sql_write(quiz)
 		#quiz = read_question()
-
+	print('-----答题器已运行，请开始排位-----')
 	observer = Observer()
 	event_handler = FileEventHandler()
 	observer.schedule(event_handler,'question.hortor.net/question/bat/',True)
