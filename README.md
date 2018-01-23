@@ -39,12 +39,14 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x01	Charles配置
 	Proxy->Recording Settings
-<img width="50%" src="./images/setting1.png">
+<img width="80%" src="./images/setting1.png">
 	Proxy->SSL Proxying Settings
-<img width="50%" src="./images/setting2.png">
+<img width="80%" src="./images/setting2.png">
 	Tools->Mirror
-<img width="50%" src="./images/setting3.png">
+<img width="80%" src="./images/setting3.png">
+
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
+
 - 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
 
 - 0x03	开始排位即可,开始上分之旅吧！
