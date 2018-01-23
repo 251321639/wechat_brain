@@ -49,7 +49,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 ## 结果
 
-![](<img width="150" height="150" src="./images/result.png">)
+![](<img width="300" src="./images/result.png">)
 自动版还未在其他手机上测试过，小米6是可以运行的。
 
 
