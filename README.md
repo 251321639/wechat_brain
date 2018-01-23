@@ -1,12 +1,12 @@
 # Python头脑王者答题器
 
-## 演示
-[视频演示](http://v.youku.com/v_show/id_XMzM0Mzk0MDQ0MA==.html?spm=a2h3j.8428770.3416059.1)
+## 效果
+[视频](http://v.youku.com/v_show/id_XMzM0Mzk0MDQ0MA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 原理说明
 
 1. 通过 Charles抓包，获取 https://question.hortor.net/question/bat/ 返回的json数据，并保存成文件
-![](./resource/image/findQuiz.gif)
+![](./findQuiz.gif)
 
 2. 通过watchdog监测question.hortor.net/question/bat/目下文件的变化，去响应对应的方法
 ```
@@ -37,11 +37,11 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x01	Charles配置
 	Proxy->Recording Settings
-![](./resource/image/setting1.gif)
+![](./image/setting1.gif)
 	Proxy->SSL Proxying Settings
-![](./resource/image/setting2.gif)
+![](./image/setting2.gif)
 	Tools->Mirror
-![](./resource/image/setting3.gif)
+![](./image/setting3.gif)
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 - 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
 
