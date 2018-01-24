@@ -48,11 +48,13 @@ class FileEventHandler(FileSystemEventHandler):
 
 	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
 
-- 0x02	手机和电脑连接同一个wifi后.运行answer.py或者answer(手动).exe
+- 0x02	手机和电脑连接同一个wifi后.运行answerManual.py或者answer(手动).exe。
+	(自动版由于手机分辨率的问题，只在小米6上测过需要手动修改adbshell.py里的config参数)
 
 - 0x03	开始排位即可,开始上分之旅吧！
 
-
+##QQ群
+561115217
 
 
 
