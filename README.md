@@ -53,7 +53,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 - 0x03	开始排位即可,开始上分之旅吧！
 
-##QQ群
+## QQ群
 561115217
 
 
