@@ -35,23 +35,7 @@ class FileEventHandler(FileSystemEventHandler):
 
 4.通过adb shell input tab 模拟点击选项(自动版的只在小米6上试过)
 
-## 使用教程
-
-- 0x01	Charles配置
-	Proxy->Recording Settings
-<img width="80%" src="./images/setting1.png">
-	Proxy->SSL Proxying Settings
-<img width="80%" src="./images/setting2.png">
-	Tools->Mirror(SAVE TO路径要改成answer目录所在的位置)
-<img width="80%" src="./images/setting3.png">
-
-
-	安装SSL证书 https://www.jianshu.com/p/5539599c7a25
-
-- 0x02	手机和电脑连接同一个wifi后.运行answerManual.py或者answer(手动).exe。
-	(自动版由于手机分辨率的问题，只在小米6上测过需要手动修改adbshell.py里的config参数)
-
-- 0x03	开始排位即可,开始上分之旅吧！
+## [使用教程](https://github.com/251321639/wechat_brain/wiki/%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
 ## QQ群
 
