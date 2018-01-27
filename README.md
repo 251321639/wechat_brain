@@ -3,7 +3,6 @@
 ## 效果
 <img width="30%" src="./images/result.png">
 
-[视频](http://v.youku.com/v_show/id_XMzM0Mzk0MDQ0MA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 原理说明
 
