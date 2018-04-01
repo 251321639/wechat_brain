@@ -1,4 +1,4 @@
-# Python头脑王者答题器
+# Python知乎答题王答题器
 
 ## 效果
 <img width="30%" src="./images/result.png">
