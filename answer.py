@@ -18,14 +18,14 @@ def read_question(f):
 	time.sleep(1)
 	response = json.load(f)
 	f.close()
-	os.remove('question.hortor.net/question/bat/findQuiz')
+	os.remove('question-zh.hortor.net/question/bat/findQuiz')
 	question = response['data']['quiz']
 	options = response['data']['options']
 	sql_result=sql.sql_match_result('"%s"' % question)
 	if sql_result:
 		print('Question: '+question)
 		print('绝对正确答案:%s' % sql_result)
-		while not os.path.exists('question.hortor.net/question/bat/choose'):
+		while not os.path.exists('question-zh.hortor.net/question/bat/choose'):
 			time.sleep(0.5)
 			adbshell.tap('option' + str(options.index(sql_result)))
 	else:
@@ -58,7 +58,7 @@ def count_base(question,choices):
     else:
         print("答案是：{0}".format(choices[index_max]))
     print(index_max)
-    while not os.path.exists('question.hortor.net/question/bat/choose'):
+    while not os.path.exists('question-zh.hortor.net/question/bat/choose'):
         time.sleep(0.5)
         adbshell.tap('option' + str(index_max))
 
@@ -70,7 +70,7 @@ class FileEventHandler(FileSystemEventHandler):
 	def on_created(self,event):
 		global quiz
 		if event.src_path.split('/')[-1] == 'findQuiz':
-			with open('question.hortor.net/question/bat/findQuiz', encoding='utf-8') as f:
+			with open('question-zh.hortor.net/question/bat/findQuiz', encoding='utf-8') as f:
 				quiz=read_question(f)
 		elif event.src_path.split('/')[-1] == 'choose':
 			sql.sql_write(quiz)
@@ -84,12 +84,12 @@ class FileEventHandler(FileSystemEventHandler):
 if __name__ == "__main__":
 	observer = Observer()
 	event_handler = FileEventHandler()
-	observer.schedule(event_handler,'question.hortor.net/question/bat/',True)
+	observer.schedule(event_handler,'question-zh.hortor.net/question/bat/',True)
 	print('-----答题器已运行，请开始排位-----')
 	observer.start()
 	try:
 		while True:
 			time.sleep(1)
-	except KeyboardInterrup:
+	except KeyboardInterrupt:
 		observer.stop()
 	observer.join()
