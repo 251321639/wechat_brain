@@ -35,6 +35,7 @@ class FileEventHandler(FileSystemEventHandler):
 4.通过adb shell input tab 模拟点击选项(自动版的只在小米6上试过)
 
 - [使用说明](https://github.com/251321639/wechat_brain/wiki/%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+新的接口地址：question-zh.hortor.net/question/bat/findQuiz （对照着更改一下）
 
 
 
