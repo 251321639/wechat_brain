@@ -18,8 +18,8 @@ try:
 except:
 	print('Table mistake already exists please ignore')
 def get_right_answer(findQuiz,choose):
-with open('question.hortor.net/question/bat/findQuiz', encoding='utf-8') as findQuiz,\
-	open('question.hortor.net/question/bat/choose', encoding='utf-8') as choose:
+with open('question-zh.hortor.net/question/bat/findQuiz', encoding='utf-8') as findQuiz,\
+	open('question-zh.hortor.net/question/bat/choose', encoding='utf-8') as choose:
 	dit = json.load(findQuiz)
 	question = dit['data']['quiz']
 	choose = json.load(choose)['data']['option']
@@ -63,6 +63,6 @@ print('Select Operation done successfully')
 
 
 
-#with open('question.hortor.net/question/bat/findQuiz',encoding='utf-8') as f:
+#with open('question-zh.hortor.net/question/bat/findQuiz',encoding='utf-8') as f:
 #	print(json.load(f)['data']['quiz'],end='')
 		

@@ -3,13 +3,14 @@
 ## 效果
 <img width="30%" src="./images/result.png">
 
+[视频](http://v.youku.com/v_show/id_XMzM0Mzk0MDQ0MA==.html?spm=a2h3j.8428770.3416059.1)
 
 ## 原理说明
 
-1. 通过 Charles抓包，获取 https://question.hortor.net/question/bat/ 返回的json数据，并保存成文件
+1. 通过 Charles抓包，获取 https://question-zh.hortor.net/question/bat/ 返回的json数据，并保存成文件
 <img width="50%" src="./images/findQuiz.png">
 
-2. 通过watchdog监测question.hortor.net/question/bat/目下文件的变化，去响应对应的方法
+2. 通过watchdog监测question-zh.hortor.net/question/bat/目下文件的变化，去响应对应的方法
 ```
 class FileEventHandler(FileSystemEventHandler):
 	def __init__(self):
@@ -34,7 +35,11 @@ class FileEventHandler(FileSystemEventHandler):
 
 4.通过adb shell input tab 模拟点击选项(自动版的只在小米6上试过)
 
+## [使用教程](https://github.com/251321639/wechat_brain/wiki/%E8%AF%A6%E7%BB%86%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
+## QQ群
+
+561115217
 
 
 
