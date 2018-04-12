@@ -18,11 +18,11 @@ def sql_match_result(question):
 	
 
 def sql_write(quiz):
-	with open('question.hortor.net/question/bat/choose', encoding='utf-8') as f:
+	with open('question-zh.hortor.net/question/bat/choose', encoding='utf-8') as f:
 		time.sleep(1)
 		response = json.load(f)
 		f.close()
-		os.remove('question.hortor.net/question/bat/choose')
+		os.remove('question-zh.hortor.net/question/bat/choose')
 		question = quiz['data']['quiz']
 		right_choose = int(response['data']['answer']) -1 
 		answer = quiz['data']['options'][right_choose]
